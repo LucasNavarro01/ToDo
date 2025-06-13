@@ -15,7 +15,7 @@ __pycache__/
 
 # Archivos de configuración
 .env
-*.env
+/.env
 
 # Archivos generados por editores/IDEs
 .vscode/
