@@ -41,4 +41,4 @@ build/
 dist/
 *.egg-info/
 
-.task.db
+/.task.db
