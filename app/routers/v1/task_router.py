@@ -4,7 +4,7 @@ from app.schemas.task import Task, TaskCreate, TaskUpdate
 from app.services import task_service
 from app.database import SessionLocal
 
-router = APIRouter(prefix='/tasks', tags=['Tasks'])
+router = APIRouter(tags=['tasks'])
 
 def get_db():
     db = SessionLocal()
