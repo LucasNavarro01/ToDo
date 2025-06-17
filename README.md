@@ -69,7 +69,7 @@ pip install -r requirements.txt
 Crear un archivo `.env` en la raíz del proyecto (si no existe) con contenido como:
 
 ```env
-DATABASE_URL=sqlite:///./tasks.db
+DATABASE_URL=sqlite:///./tareas.db
 LOG_LEVEL=INFO
 ```
 
