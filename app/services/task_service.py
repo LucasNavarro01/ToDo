@@ -1,20 +1,21 @@
 from sqlalchemy.orm import Session
-from .. import models, schemas
+from app.models.task import Task
+from app.schemas.task import TaskCreate, TaskUpdate
 
 def get_tasks(db: Session):
-    return db.query(models.task.Task).all()
+    return db.query(Task).all()
 
 def get_task(db: Session, task_id: int):
-    return db.query(models.task.Task).filter(models.task.Task.id == task_id).first()
+    return db.query(Task).filter(Task.id == task_id).first()
 
-def create_task(db: Session, task: schemas.task.TaskCreate):
-    db_task = models.task.Task(**task.dict())
+def create_task(db: Session, task: TaskCreate):
+    db_task = Task(**task.dict())
     db.add(db_task)
     db.commit()
     db.refresh(db_task)
     return db_task
 
-def update_task(db: Session, task_id: int, task_data: schemas.task.TaskUpdate):
+def update_task(db: Session, task_id: int, task_data: TaskUpdate):
     task = get_task(db, task_id)
     if task:
         for key, value in task_data.dict().items():

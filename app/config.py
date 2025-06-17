@@ -1,10 +1,10 @@
-from dotenv import load_dotenv
-import os
+from pydantic_settings import BaseSettings
 
-load_dotenv()
+class Settings(BaseSettings):
+    DATABASE_URL: str
+    LOG_LEVEL: str = 'INFO'
 
-class Settings:
-    DATABASE_URL: str = os.getenv("DATABASE_URL")
-    LOG_LEVEL: str = os.getenv("LOG_LEVEL", "INFO")
+    class Config:
+        env_file = '.env'
 
 settings = Settings()

@@ -4,6 +4,12 @@ Este proyecto es una API REST desarrollada con **FastAPI** que permite realizar 
 
 ---
 
+## 🐍 Requisitos
+    
+- Python 3.10
+- Git (opcional para clonar el repo)
+
+
 ## 🚀 Funcionalidades
 
 - ✅ Obtener todas las tareas.
@@ -132,4 +138,3 @@ Cuerpo del request (JSON):
 Desarrollado por Lucas Navarro
 
 ---
-
