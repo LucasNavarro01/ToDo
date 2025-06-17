@@ -137,5 +137,5 @@ Cuerpo del request (JSON):
 ## 🧑‍💻 Autor
 
 Desarrollado por Lucas Navarro
-Para Curso de Python + FastAPI del Instituto Tecnologico Universitario (Profesor Juan M. Panasiti
+Para Curso de Python + FastAPI del Instituto Tecnologico Universitario (Profesor Juan M. Panasiti)
 ---
