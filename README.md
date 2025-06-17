@@ -70,6 +70,7 @@ Crear un archivo `.env` en la raíz del proyecto (si no existe) con contenido co
 
 ```env
 DATABASE_URL=sqlite:///./tasks.db
+LOG_LEVEL=INFO
 ```
 
 ### 6. Ejecutar el servidor
