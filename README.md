@@ -69,7 +69,8 @@ pip install -r requirements.txt
 Crear un archivo `.env` en la raíz del proyecto (si no existe) con contenido como:
 
 ```env
-DATABASE_URL=sqlite:///./tasks.db
+DATABASE_URL=sqlite:///./tareas.db
+LOG_LEVEL=INFO
 ```
 
 ### 6. Ejecutar el servidor
@@ -136,5 +137,5 @@ Cuerpo del request (JSON):
 ## 🧑‍💻 Autor
 
 Desarrollado por Lucas Navarro
-
+Para Curso de Python + FastAPI del Instituto Tecnologico Universitario (Profesor Juan M. Panasiti)
 ---
